@@ -8,13 +8,7 @@ Included is asn1crypto, ecc, and rsa Python libraries.
 
 ## Known Bugs
 
-* Does not verify which site the HID VA response comes from. The Responder ID 
-  is a hash. To differentiate the origin site, one has to look at the signing 
-  certificate instead.
-* Elliptic Curve (EC) functionality fails. This is either an issue with 
-  parsing the key from the ASN.1 object or the current implementation of EC 
-  verification is incorrect. I'm inclined to the latter--perhaps the p-values 
-  implemented by NSA is non-standard (unlikely)?
+* Elliptic Curve (EC) functionality fails.
 * Some CAs fail to load when saved in PEM format. The reason is still 
   unknown.
 
